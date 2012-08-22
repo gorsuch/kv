@@ -32,6 +32,13 @@ KV.parse('a=1 b=2.5123 c=foo')
 # => {"a"=>1, "b"=>2.5123, "c"=>"foo"}
 ```
 
+To unparse a Hash to a String:
+
+```ruby
+KV.unparse(a: 1)
+# => "a=1"
+```
+
 ## Contributing
 
 1. Fork it
