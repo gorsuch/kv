@@ -22,7 +22,14 @@ Or install it yourself as:
 require 'kv'
 
 KV.parse('foo=bar a=b')
-# => { "foo" => "bar", "a" => "b" }
+# => {"foo"=>"bar", "a"=>"b"}
+```
+
+It also handles integers and floats:
+
+```ruby
+KV.parse('a=1 b=2.5123 c=foo')
+#=> {"a"=>1, "b"=>2.5123, "c"=>"foo"}
 ```
 
 ## Contributing
