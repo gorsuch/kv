@@ -29,7 +29,7 @@ It also handles integers and floats:
 
 ```ruby
 KV.parse('a=1 b=2.5123 c=foo')
-#=> {"a"=>1, "b"=>2.5123, "c"=>"foo"}
+# => {"a"=>1, "b"=>2.5123, "c"=>"foo"}
 ```
 
 ## Contributing
