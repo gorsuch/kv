@@ -14,4 +14,12 @@ describe KV::Parser do
   it 'should reject non-pairs' do
     parser.handle('hi!').should eq({})
   end
+
+  it 'should handle integers properly' do
+    parser.handle('a=1').should eq({"a" => 1})
+  end
+
+  it 'should handle floats properly' do
+    parser.handle('a=1.1').should eq({"a" => 1.1})
+  end
 end
