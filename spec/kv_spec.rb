@@ -6,6 +6,6 @@ describe KV do
   end
 
   it "unparses a hash" do
-    KV.unparse(a: 1).should eq("a=1")
+    KV.unparse(:a => 1).should eq("a=1")
   end
 end
