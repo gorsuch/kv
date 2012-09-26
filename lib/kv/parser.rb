@@ -1,9 +1,9 @@
 module KV
   class Parser
     def parse_value(v)
-      if v.match(/^\d+\.\d+/)
+      if v.match(/^\d+\.\d+$/)
         v.to_f
-      elsif v.match(/^\d+/)
+      elsif v.match(/^\d+$/)
         v.to_i
       else
         v

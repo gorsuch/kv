@@ -22,4 +22,8 @@ describe KV::Parser do
   it 'should handle floats properly' do
     parser.handle('a=1.1').should eq({"a" => 1.1})
   end
+
+  it 'should be careful with things that are not really floats' do
+    parser.handle('ip=10.10.10.10').should eq({'ip' => '10.10.10.10'})
+  end
 end
