@@ -1,5 +1,7 @@
 # KV
 
+[![Build Status](https://secure.travis-ci.org/gorsuch/kv.png)](http://travis-ci.org/gorsuch/kv)
+
 KV is a simple library that parses a string of `key=value` sets into a Hash.
 
 ## Installation
